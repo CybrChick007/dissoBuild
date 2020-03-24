@@ -1,2 +1,4 @@
 # dissoBuild
-The project artefact for my dissertation
+This project artefact for my dissertation
+
+Languages consist of HTML, JavaScript and CSS
