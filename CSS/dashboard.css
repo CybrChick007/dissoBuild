@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: (1fr, 2fr, 2fr);
+
+  grid-template-areas: "header header header"
+                       "files files taskList"
+                       "schedual stats team";
+
+  height:100vh;
+  width: 100vw;
+}
+
+header{
+  grid-area: header;
+}
+
+.files{
+  grid-area: files;
+}
+
+.taskList{
+  grid-area: taskList;
+}
+
+.calendar{
+  grid-area: schedual;
+}
+
+.progress{
+  grid-area: stats;
+}
+
+.team{
+  grid-area: team;
+}
