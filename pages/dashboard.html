@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./CSS/dashboard.css">
-    <link rel="stylesheet" href="./CSS/mainStyle.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+    <link rel="stylesheet" href="../CSS/tasklist.css">
+    <link rel="stylesheet" href="../CSS/font-awesome.css">
   </head>
 
   <body>
@@ -14,6 +16,25 @@
 
     <section class="taskList">
       <h2>Task List</h2>
+      <div class="taskContainer">
+        <div class="clear">
+            <i class="fa fa-refresh"></i>
+        </div>
+
+      <div class="taskContent">
+        <ul id="list">
+          <li class="item">
+            <i class="fa fa-circle-thin complete"></i>
+            <p class="text">Drink Coffee</p>
+            <i class="fa fa-trash-o delete"></i>
+        </ul>
+
+        <div class="addItem">
+          <i class="fa fa-plus-circle"></i>
+          <input type="text" id="input" placeholder="Add a Task">
+        </div>
+      </div>
+    </div>
     </section>
 
     <section class="files">
@@ -33,4 +54,5 @@
     </section>
 
   </body>
+  <script src="../scripts/dashboard.js"></script>
 </html>
