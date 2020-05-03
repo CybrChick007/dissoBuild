@@ -1,0 +1,26 @@
+{
+  "name": "dissobuild",
+  "version": "1.0.0",
+  "description": "This project artefact for my dissertation",
+  "entry point": "(index.js) server.js",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[Dindex.html",
+  "dependencies": {
+    "d3": "^5.16.0",
+    "express": "^4.17.1",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CybrChick007/dissoBuild.git"
+  },
+  "author": "F Plant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CybrChick007/dissoBuild/issues"
+  },
+  "homepage": "https://github.com/CybrChick007/dissoBuild#readme"
+}
