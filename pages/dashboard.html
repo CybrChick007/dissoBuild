@@ -3,43 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../CSS/dashboard.css">
-    <link rel="stylesheet" href="../CSS/mainStyle.css">
-    <link rel="stylesheet" href="../CSS/tasklist.css">
-    <link rel="stylesheet" href="../CSS/font-awesome.css">
+    <!-- various style sheets for the different tools on the page -->
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <link rel="stylesheet" href="./CSS/mainStyle.css">
+    <link rel="stylesheet" href="./CSS/tasklist.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
+      <!-- navigation and title -->
       <a href="#" class="nav" id="user">Signed In</a>
       <a href="dashboard.html" class="nav">Dashboard</a>
+      <a href="projectScope.html" class="nav">Project Scope</a>
         <h1 class="titles">Welcome to your Dashboard</h1>
     </header>
 
+<!-- Sections used to seperate each tool for easy identification in javascript and grid placement -->
 
-    <section class="taskList">
-      <h2>Task List</h2>
-      <div class="taskContainer">
-        <div class="clear">
-            <i class="fa fa-refresh"></i>
-        </div>
-
-      <div class="taskContent">
-        <ul id="list">
-          <li class="item">
-            <i class="fa fa-circle-thin complete"></i>
-            <p class="text">Drink Coffee</p>
-            <i class="fa fa-trash-o delete"></i>
-        </ul>
-
-        <div class="addItem">
-          <i class="fa fa-plus-circle"></i>
-          <input type="text" id="input" placeholder="Add a Task">
-        </div>
-      </div>
-    </div>
-    </section>
+<!-- Task list section -->
+<section class="tasks">
+   <div class="todo-container">
+     <h2>Task List</h2>
+     <form action="#" id='todo'>
+       <input type="text" name="item" id="item" placeholder="Add New Task" />
+     </form>
+     <ul id="list"></ul>
+     <button id='add'>Add</button>
+   </div>
+ </section>
 
     <section class="files">
       <h2>Quick File Access</h2>
@@ -60,9 +52,11 @@
     </section>
 
   </body>
-  <script src="../scripts/dashboard.js" type="text/javascript"></script>
-  <script src="../scripts/schedule.js" type="text/javascript"></script>
-  <script src="../scripts/MindFusion.Scheduling.js" type="text/javascript"></script>
+  <!-- Scripts -->
+  <script src="./scripts/dashboard.js" type="text/javascript"></script>
+  <script src="./scripts/task.js" type="text/javascript"></script>
+  <script src="./scripts/schedule.js" type="text/javascript"></script>
+  <script src="./scripts/MindFusion.Scheduling.js" type="text/javascript"></script>
 
   </script>
 

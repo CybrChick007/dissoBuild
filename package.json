@@ -5,11 +5,17 @@
   "entry point": "(index.js) server.js",
   "main": "\u001b[D\u001b[D\u001b[D\u001b[Dindex.html",
   "dependencies": {
+    "@babel/core": "^7.9.6",
+    "browserify": "^16.5.1",
     "d3": "^5.16.0",
     "express": "^4.17.1",
     "requirejs": "^2.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0"
+  },
   "scripts": {
     "start": "node server/server.js"
   },
