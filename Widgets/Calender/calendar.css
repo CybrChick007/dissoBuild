@@ -20,9 +20,8 @@ html, body {
   width: 22em;
   margin: 2em auto 0;
   padding: 2em;
-  border: 1px solid #dcdcff;
+  border: 1px;
   border-radius: 5px;
-  background: #FFFEE4;
   box-shadow: 2px 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -34,6 +33,7 @@ table {
   border-collapse: collapse;
   color: #444;
 }
+
 table td {
   height: 48px;
   text-align: center;
