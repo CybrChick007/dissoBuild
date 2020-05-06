@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Ruluko);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Serif', serif;
+  color: #1F567A;
+  -webkit-font-smoothing: antialiased;
+  background: #EBF4FA;
+}
+
+.calendarBlock {
+  width: 22em;
+  margin: 2em auto 0;
+  padding: 2em;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+table {
+  clear: both;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #444;
+}
+
+table td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  width: calc(100%/7);
+}
+table td.not-today {
+  color: #c0c0c0;
+}
+table td.today {
+  font-weight: 700;
+  color: #FEFEFE;
+  font-size: 1.5em;
+  background: #F25036;
+  border-radius: 3px;
+}
+
+thead td {
+  border: none;
+  color: #FFFEE4;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  background: #607779;
+}
+
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+#btnPrev:before {
+  content: '\f104';
+  font-family: FontAwesome;
+  padding-right: 4px;
+}
+
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+#btnNext:after {
+  content: '\f105';
+  font-family: FontAwesome;
+  padding-left: 4px;
+}
+
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #c0c0c0;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  font-weight: bold;
+}

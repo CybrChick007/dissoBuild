@@ -1,3 +1,4 @@
+//Project team structure for scope map
 {
   "nodes": [
     {"id": "Project Manager", "group": 1},
